@@ -76,8 +76,8 @@ python generate_reports.py --config custom_config.json
 
 ## Expected Output
 
-✅ Report saved: reports/COMP8760 - student123.xlsx
-✅ Report saved: reports/COMP8760 - student456.xlsx
+✅ Report saved: reports/COMP8760 - student123.xlsx\
+✅ Report saved: reports/COMP8760 - student456.xlsx\
 ✅ All reports generated successfully. Total reports: 10
 
 # 🤝 Contributing

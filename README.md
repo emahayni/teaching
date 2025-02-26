@@ -1,4 +1,4 @@
-Student Report Generator
+### Student Report Generator ###
 
 # 📌 Overview
 
@@ -30,6 +30,7 @@ The Student Report Generator is a Python script designed to automate the generat
 
 The script relies on a config.json file to manage its input and output settings. Below is an example configuration:
 
+```sh
 {
   "master_file": "master.xlsx",
   "template_file": "template.xlsx",
@@ -47,6 +48,7 @@ The script relies on a config.json file to manage its input and output settings.
     "Q3": "C7"
   }
 }
+```
 
 ## Configuration Parameters
 
@@ -68,11 +70,15 @@ Running the Script
 
 To execute the script with the default configuration:
 
+```sh
 python generate_reports.py
+```
 
 To specify a different config file:
 
+```sh
 python generate_reports.py --config custom_config.json
+```
 
 ## Expected Output
 

@@ -21,10 +21,10 @@ The Student Report Generator is a Python script designed to automate the generat
 # 📂 Project Structure
 
 📦 student-report-generator
-│-- 📄 generate_reports.py      # Main script
-│-- 📄 config.json              # Configuration file
-│-- 📂 reports/                 # Output folder for generated reports
-│-- 📄 README.md                # Documentation
+│-- 📄 generate_reports.py      # Main script\
+│-- 📄 config.json              # Configuration file\
+│-- 📂 reports/                 # Output folder for generated reports\
+│-- 📄 README.md                # Documentation\
 
 # ⚙️ Configuration
 
@@ -50,8 +50,8 @@ The script relies on a config.json file to manage its input and output settings.
 
 ## Configuration Parameters
 
-|    Parameter    |                        Description                        |
-|:---------------:|:---------------------------------------------------------:|
+| Parameter       | Description                                               |
+|-----------------|-----------------------------------------------------------|
 | master_file     | Path to the master Excel file containing student data.    |
 | template_file   | Path to the Excel report template.                        |
 | output_folder   | Directory where reports will be saved.                    |

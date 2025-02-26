@@ -1,14 +1,20 @@
+import argparse
 import json
 import os
+
 import pandas as pd
 from openpyxl import load_workbook
 
 # For debugging:
 verbose = False
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Generate student reports from an Excel master file.")
+parser.add_argument("--config", default="config.json", help="Path to the config file.")
+args = parser.parse_args()
+
 # Load the config file
-config_file = "config.json"
-with open(config_file, "r") as f:
+with open(args.config, "r") as f:
     config = json.load(f)
 
 # Extract configuration values

@@ -1,24 +1,24 @@
 Student Report Generator
 
-📌 Overview
+# 📌 Overview
 
 The Student Report Generator is a Python script designed to automate the generation of individual student reports from a master Excel sheet. The script reads student data, replaces placeholders in a report template, and saves the generated reports in a designated output folder.
 
-🚀 Features
+# 🚀 Features
 
-Customizable Configuration: Uses a JSON config file for easy customization.
+- Customizable Configuration: Uses a JSON config file for easy customization.
 
-Batch Processing: Supports processing a specific range of rows.
+- Batch Processing: Supports processing a specific range of rows.
 
-Column Mapping: Dynamically maps master file columns to template cells.
+- Column Mapping: Dynamically maps master file columns to template cells.
 
-Formatted Output: Ensures text fits inside Excel cells by adjusting widths and heights.
+- Formatted Output: Ensures text fits inside Excel cells by adjusting widths and heights.
 
-Command-Line Execution: Allows running the script with different configurations.
+- Command-Line Execution: Allows running the script with different configurations.
 
-Progress Tracking: Displays report count and progress updates.
+- Progress Tracking: Displays report count and progress updates.
 
-📂 Project Structure
+# 📂 Project Structure
 
 📦 student-report-generator
 │-- 📄 generate_reports.py      # Main script
@@ -26,7 +26,7 @@ Progress Tracking: Displays report count and progress updates.
 │-- 📂 reports/                 # Output folder for generated reports
 │-- 📄 README.md                # Documentation
 
-⚙️ Configuration
+# ⚙️ Configuration
 
 The script relies on a config.json file to manage its input and output settings. Below is an example configuration:
 
@@ -48,49 +48,21 @@ The script relies on a config.json file to manage its input and output settings.
   }
 }
 
-Configuration Parameters
+## Configuration Parameters
 
-Parameter
+|    Parameter    |                        Description                        |
+|:---------------:|:---------------------------------------------------------:|
+| master_file     | Path to the master Excel file containing student data.    |
+| template_file   | Path to the Excel report template.                        |
+| output_folder   | Directory where reports will be saved.                    |
+| assignment_name | Prefix for the report filenames.                          |
+| sheet_name      | Sheet name in the master file.                            |
+| key_column      | Column used for generating report filenames.              |
+| start_row       | First row to process (for batch processing).              |
+| end_row         | Last row to process (for batch processing).               |
+| mapping         | Dictionary mapping column names to Excel cell references. |
 
-Description
-
-master_file
-
-Path to the master Excel file containing student data.
-
-template_file
-
-Path to the Excel report template.
-
-output_folder
-
-Directory where reports will be saved.
-
-assignment_name
-
-Prefix for the report filenames.
-
-sheet_name
-
-Sheet name in the master file.
-
-key_column
-
-Column used for generating report filenames.
-
-start_row
-
-First row to process (for batch processing).
-
-end_row
-
-Last row to process (for batch processing).
-
-mapping
-
-Dictionary mapping column names to Excel cell references.
-
-▶️ Usage
+# ▶️ Usage
 
 Running the Script
 
@@ -102,34 +74,18 @@ To specify a different config file:
 
 python generate_reports.py --config custom_config.json
 
-Expected Output
+## Expected Output
 
 ✅ Report saved: reports/COMP8760 - student123.xlsx
 ✅ Report saved: reports/COMP8760 - student456.xlsx
 ✅ All reports generated successfully. Total reports: 10
 
-⏳ Automating Execution
+# 🤝 Contributing
 
-Using Cron (Linux/macOS)
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-To schedule the script to run daily at 9 AM:
-
-0 9 * * * /usr/bin/python3 /path/to/generate_reports.py --config /path/to/config.json
-
-Using Windows Task Scheduler
-
-Open Task Scheduler.
-
-Create a new task.
-
-Set the action to Start a Program and use:
-
-python "C:\path\to\generate_reports.py" --config "C:\path\to\config.json"
-
-Schedule it as needed.
-
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
 
-🚀 Feel free to contribute! If you find this project useful, give it a ⭐ on GitHub!
+🚀 Enjoy using the Student Report Generator! If you find this project useful, give it a ⭐ on GitHub!

@@ -20,11 +20,11 @@ The Student Report Generator is a Python script designed to automate the generat
 
 # 📂 Project Structure
 
-📦 student-report-generator
+📦 student-report-generator\
 │-- 📄 generate_reports.py      # Main script\
 │-- 📄 config.json              # Configuration file\
 │-- 📂 reports/                 # Output folder for generated reports\
-│-- 📄 README.md                # Documentation\
+│-- 📄 README.md                # Documentation
 
 # ⚙️ Configuration
 

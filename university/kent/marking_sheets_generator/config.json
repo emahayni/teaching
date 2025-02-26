@@ -1,0 +1,24 @@
+{
+  "master_file": "Master_Marking_Sheet.xlsx",
+  "template_file": "Template.xlsx",
+  "output_folder": "reports/",
+  "assigment_name": "COMP0101-A7 Report",
+  "sheet_name": "A7",
+  "key_column": "Login",
+  "start_row": 0,
+  "end_row": 0,
+  "mapping": {
+    "Name": "C2",
+    "Login": "C3",
+    "Number": "C4",
+    "Q1_Mark": "D7",
+    "Q1_Feedback": "D8",
+    "Q2_Mark": "D10",
+    "Q2_Feedback": "D11",
+    "Q3_Mark": "D13",
+    "Q3_Feedback": "D14",
+    "Q4_Mark": "D16",
+    "Q4_Feedback": "D17",
+    "Total_Mark": "C5"
+  }
+}

@@ -1,9 +1,9 @@
 {
   "master_file": "Master_Marking_Sheet.xlsx",
-  "template_file": "Template.xlsx",
+  "template_file": "Report_Template.xlsx",
   "output_folder": "reports/",
-  "assigment_name": "COMP0101-A7 Report",
-  "sheet_name": "A7",
+  "assigment_name": "COMP1234-A1 Report",
+  "sheet_name": "A1",
   "key_column": "Login",
   "start_row": 0,
   "end_row": 0,

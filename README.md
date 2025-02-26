@@ -1,10 +1,10 @@
-### Student Report Generator ###
+# Student Report Generator
 
-# 📌 Overview
+## 📌 Overview
 
 The Student Report Generator is a Python script designed to automate the generation of individual student reports from a master Excel sheet. The script reads student data, replaces placeholders in a report template, and saves the generated reports in a designated output folder.
 
-# 🚀 Features
+## 🚀 Features
 
 - Customizable Configuration: Uses a JSON config file for easy customization.
 
@@ -18,7 +18,7 @@ The Student Report Generator is a Python script designed to automate the generat
 
 - Progress Tracking: Displays report count and progress updates.
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 📦 student-report-generator\
 │-- 📄 generate_reports.py      # Main script\
@@ -26,7 +26,7 @@ The Student Report Generator is a Python script designed to automate the generat
 │-- 📂 reports/                 # Output folder for generated reports\
 │-- 📄 README.md                # Documentation
 
-# ⚙️ Configuration
+## ⚙️ Configuration
 
 The script relies on a config.json file to manage its input and output settings. Below is an example configuration:
 
@@ -50,7 +50,7 @@ The script relies on a config.json file to manage its input and output settings.
 }
 ```
 
-## Configuration Parameters
+### Configuration Parameters
 
 | Parameter       | Description                                               |
 |-----------------|-----------------------------------------------------------|
@@ -64,7 +64,7 @@ The script relies on a config.json file to manage its input and output settings.
 | end_row         | Last row to process (for batch processing).               |
 | mapping         | Dictionary mapping column names to Excel cell references. |
 
-# ▶️ Usage
+## ▶️ Usage
 
 Running the Script
 
@@ -80,17 +80,17 @@ To specify a different config file:
 python generate_reports.py --config custom_config.json
 ```
 
-## Expected Output
+### Expected Output
 
 ✅ Report saved: reports/COMP8760 - student123.xlsx\
 ✅ Report saved: reports/COMP8760 - student456.xlsx\
 ✅ All reports generated successfully. Total reports: 10
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-# 📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 

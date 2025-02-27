@@ -1,7 +1,7 @@
 {
-  "master_file": "COMP5590.A1/Master_Sheet.xlsx",
-  "template_file": "COMP5590.A1/Template.xlsx",
-  "output_folder": "COMP5590.A1/reports/",
+  "master_file": "Master_Sheet.xlsx",
+  "template_file": "Template.xlsx",
+  "output_folder": "reports/",
   "assigment_name": "COMP5590-A1 Report",
   "sheet_name": "A1",
   "key_column": "Login",

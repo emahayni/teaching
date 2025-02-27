@@ -20,15 +20,19 @@ The Student Report Generator is a Python script designed to automate the generat
 
 ## 📂 Project Structure
 
-📦 student-report-generator\
-│-- 📄 generate_reports.py      # Main script\
-│-- 📄 config.json              # Configuration file\
-│-- 📂 reports/                 # Output folder for generated reports\
-│-- 📄 README.md                # Documentation
+📦 Student_Report_Generator\
+
+| Structure                            | Description                                                                                     |
+|:-------------------------------------|-------------------------------------------------------------------------------------------------|
+| │-- 📄 **reports_generater.py**      | # Main script                                                                                   |
+| │-- 📄 **config.json**               | # Configuration file which contains the mapping between Master sheet and the individual report. |
+| │-- 📋 **Master_Marking_Sheet.xlsx** | # The master marking sheet where each row is a student report.                                  |  
+| │-- 📋 **Report_Template.xlsx**      | # This is the individual marking feedback report.                                               |  
+| │-- 📂 reports/                      | # Output folder for generated reports.                                                          |
 
 ## ⚙️ Configuration
 
-The script relies on a config.json file to manage its input and output settings. Below is an example configuration:
+The script relies on a config.json file to manage its input and output settings. Below is an example configuration along with mapping between master marking sheet and the individual marking feedback report:
 
 ```sh
 {
@@ -71,13 +75,13 @@ Running the Script
 To execute the script with the default configuration:
 
 ```sh
-python generate_reports.py
+python reports_generater.py
 ```
 
 To specify a different config file:
 
 ```sh
-python generate_reports.py --config custom_config.json
+python reports_generater.py --config custom_config.json
 ```
 
 ### Expected Output

@@ -22,5 +22,8 @@
     "Con2_Feedback": "C9",
 	"Presentation_Feedback": "C10",
     "Conversation_Feedback": "C11"
-  }
+  },
+  "moodle_folder": "Moodle",
+  "reference_file": "reference.xlsx",
+  "output_reference_file": "updated_reference.xlsx"
 }

@@ -1,0 +1,35 @@
+{
+  "marking_worksheet": {
+    "marking_filename": "Marking_WorkSheet.xlsx",
+    "sheet_name": "A1",
+    "feedback_template_filename": "Feedback_Template.xlsx",
+    "output_folder": "reports/",
+    "module_name": "COMP5590",
+    "assigment_name": "A1",
+    "key_column": "Login",
+    "start_row": 0,
+    "end_row": 0,
+    "mapping": {
+      "Name": "B1",
+      "Login": "B2",
+      "US1_Mark": "B6",
+      "Con1_Mark": "B7",
+      "US2_Mark": "B8",
+      "Con2_Mark": "B9",
+      "Presentation_Mark": "B10",
+      "Conversation_Mark": "B11",
+      "US1_Feedback": "C6",
+      "Con1_Feedback": "C7",
+      "US2_Feedback": "C8",
+      "Con2_Feedback": "C9",
+      "Presentation_Feedback": "C10",
+      "Conversation_Feedback": "C11"
+    }
+  },
+  "reference_worksheet": {
+    "prepare_moodle_files": 1,
+    "output_folder": "Moodle/",
+    "reference_file": "Moodle_Grading_Worksheet.xlsx",
+    "reference_file_updated": "Moodle_Grading_Worksheet_[updated].xlsx"
+  }
+}

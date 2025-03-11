@@ -29,7 +29,7 @@
   "reference_worksheet": {
     "prepare_moodle_files": 1,
     "output_folder": "Moodle/",
-    "reference_file": "Moodle_Grading_Worksheet.xlsx",
+    "reference_file": "Moodle_Grading_Worksheet.csv",
     "reference_file_updated": "Moodle_Grading_Worksheet_[updated].csv",
     "marking_workflow_state" : "Released"
   }

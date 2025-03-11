@@ -217,7 +217,7 @@ def main():
         zip_filepath = os.path.join(reference_worksheet_config["output_folder"], zip_filename)
         zip_output_files(marking_worksheet_config["output_folder"], zip_filepath)
 
-        # clean_output_folder(marking_worksheet_config["output_folder"])
+        clean_output_folder(marking_worksheet_config["output_folder"])
 
 
 if __name__ == "__main__":

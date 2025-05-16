@@ -2,8 +2,8 @@
 setlocal
 
 :: Define source file and destination folder
-set "SOURCE_FILE=reports_generater.py"
-set "DEST_FOLDER=examples\COMP5590.A1.Moodle"
+set "SOURCE_FILE=reports_generator.py"
+set "DEST_FOLDER=examples\COMP5590.A2"
 set "DEST_FILE=%DEST_FOLDER%\%SOURCE_FILE%"
 
 :: Copy file to destination

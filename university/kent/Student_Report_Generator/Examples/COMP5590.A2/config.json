@@ -1,0 +1,40 @@
+{
+  "marking_worksheet": {
+    "marking_filename": "Master_Marking_Sheet.xlsx",
+    "sheet_name": "A2",
+    "feedback_template_filename": "Feedback_Report_Template.xlsx",
+    "output_folder": "reports/",
+    "module_name": "COMP5590",
+    "assigment_name": "A2",
+    "key_column": "Login",
+    "start_row": 0,
+    "end_row": 0,
+    "mapping": {
+      "Name": "B1",
+      "Login": "B2",
+      "Grade": "B3",
+      "Functionality": "B6",
+      "Code_Quality": "B7",
+      "Tests": "B8",
+      "Organisation_Plan": "B9",
+      "Database_Design": "B10",
+      "Deductions": "B13",
+      "Bonus": "B14",
+      "Functionality_Feedback": "C6",
+      "Code_Quality_Feedback": "C7",
+      "Tests_Feedback": "C8",
+      "Organisation_Plan_Feedback": "C9",
+      "Database_Design_Feedback": "C10",
+      "GitLab_Contributions_Feedback": "C12",
+      "Deductions_Feedback": "C13",
+      "Bonus_Feedback": "C14"
+    }
+  },
+  "reference_worksheet": {
+    "prepare_moodle_files": 1,
+    "output_folder": "Moodle/",
+    "reference_file": "Moodle_Grading_Worksheet.csv",
+    "reference_file_updated": "Moodle_Grading_Worksheet_[updated].csv",
+    "marking_workflow_state": "Released"
+  }
+}

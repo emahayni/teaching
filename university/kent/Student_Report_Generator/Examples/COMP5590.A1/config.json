@@ -1,6 +1,6 @@
 {
-  "master_file": "Master_Sheet.xlsx",
-  "template_file": "Template.xlsx",
+  "master_file": "Master_Marking_Sheet.xlsx",
+  "template_file": "Feedback_Report_Template.xlsx",
   "output_folder": "reports/",
   "assigment_name": "COMP5590-A1 Report",
   "sheet_name": "A1",

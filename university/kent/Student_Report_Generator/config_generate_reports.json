@@ -1,6 +1,6 @@
 {
-  "marking_worksheet": {
-    "marking_filename": "Marking_WorkSheet.xlsx",
+  "marks_worksheet": {
+    "marks_filename": "Marking_WorkSheet.xlsx",
     "sheet_name": "A1",
     "feedback_template_filename": "Feedback_Template.xlsx",
     "output_folder": "reports/",
@@ -26,11 +26,11 @@
       "Conversation_Feedback": "C11"
     }
   },
-  "reference_worksheet": {
+  "moodle_worksheet": {
     "prepare_moodle_files": 1,
     "output_folder": "Moodle/",
-    "reference_file": "Moodle_Grading_Worksheet.csv",
-    "reference_file_updated": "Moodle_Grading_Worksheet_[updated].csv",
-    "marking_workflow_state" : "Released"
+    "moodle_file": "Moodle_Grading_Worksheet.csv",
+    "moodle_file_updated": "Moodle_Grading_Worksheet_[updated].csv",
+    "moodle_workflow_state" : "Released"
   }
 }

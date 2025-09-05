@@ -4,7 +4,7 @@ setlocal
 :: Define source file and destination folder
 set "SOURCE_FILE_1=marking_automation.py"
 set "SOURCE_FILE_2=marking_utils.py"
-set "DEST_FOLDER=examples\COMP6644.CW2"
+set "DEST_FOLDER=examples\COMP5590.A3"
 set "DEST_FILE=%DEST_FOLDER%\%SOURCE_FILE%"
 
 :: Copy file to destination
@@ -23,3 +23,5 @@ del "%SOURCE_FILE_2%"
 
 echo Done.
 endlocal
+
+pause

@@ -147,15 +147,11 @@ def do_generate_reports(df_marks, ext, key_column, mapping, output_folder, templ
     print(f'✨ Total generated reports: {generated_count}')
 
 
-def rename_existing_reports(df, feedback_file_extension, reports_folder):
+def rename_existing_reports(df, feedback_file_extension, reports_folder, renamed_reports_folder):
     """
     Rename reports in the reports folder based on the DataFrame containing login, feedback_filename, and ext columns.
     Each file will be renamed from {login}.{ext} to {feedback_filename}.{ext}.
     """
-    # Create output sub-folder:
-    renamed_output = reports_folder + '/renamed'
-    os.makedirs(renamed_output, exist_ok=True)
-
     renamed_count = 0
     for _, row in df.iterrows():
         login = row.get("Login")
@@ -166,7 +162,7 @@ def rename_existing_reports(df, feedback_file_extension, reports_folder):
             continue
 
         old_filename = os.path.join(reports_folder, f"{login}.{feedback_file_extension}")
-        new_filename = os.path.join(renamed_output, f"{new_name}.{feedback_file_extension}")
+        new_filename = os.path.join(renamed_reports_folder, f"{new_name}.{feedback_file_extension}")
 
         if os.path.exists(old_filename):
             shutil.copy2(old_filename, new_filename)
@@ -280,7 +276,14 @@ def renaming_reports(config):
 
     # Main action:
     output_folder = marks_worksheet_config["output_folder"]
-    rename_existing_reports(df_marks, feedback_file_extension, output_folder)
+    renamed_reports_folder = moodle_folder + '/reports_renamed'
+    os.makedirs(renamed_reports_folder, exist_ok=True)
+
+    rename_existing_reports(df_marks, feedback_file_extension, output_folder, renamed_reports_folder)
+
+    zip_filename = f"{module_name}_{assignment_name}_Reports.zip"
+    zip_filepath = os.path.join(moodle_folder, zip_filename)
+    zip_output_files(renamed_reports_folder, zip_filepath)
 
 
 def main(action):
@@ -301,4 +304,4 @@ def main(action):
 
 
 if __name__ == "__main__":
-    main(2)
+    main(1)
